@@ -1,0 +1,41 @@
+/* Ensures the main content is not too wide */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the aside element */
+  aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light transparent border */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Ensure image inside the aside element maintains the aspect ratio */
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Styling for the footer */
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  
+  /* Ensure profile image doesn't affect new image inside aside */
+  main img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Reset paragraph padding */
+  p {
+    padding: 0;
+  }
+  
