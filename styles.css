@@ -6,10 +6,10 @@ main {
   
   /* Style for the aside element */
   aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 20em;
+    margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2); /* Light transparent border */
-    padding: 1rem;
+    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
