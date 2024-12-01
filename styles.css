@@ -1,41 +1,79 @@
-/* Ensures the main content is not too wide */
+/* Center header, main, footer, and grid */
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Navigation styling */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Add border to h1 */
+h1 {
+  border-bottom: 2px solid steelblue;
+  padding-bottom: 0.5rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Main and aside styles for grid */
 main {
-    max-width: 840px;
-    margin: 0 auto;
-  }
-  
-  /* Style for the aside element */
-  aside {
-    width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Light transparent border */
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Ensure image inside the aside element maintains the aspect ratio */
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  /* Styling for the footer */
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-  
-  /* Ensure profile image doesn't affect new image inside aside */
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  /* Reset paragraph padding */
-  p {
-    padding: 0;
-  }
-  
+  grid-column: 2 / 3;
+  margin: 1rem;
+}
+
+aside {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 20rem;
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Light transparent border */
+  padding: 1em;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* Image inside aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Profile image inside main */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Reset paragraph padding */
+p {
+  padding: 0;
+}
