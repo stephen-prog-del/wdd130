@@ -18,8 +18,8 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo on the left, navigation on the right */
     align-items: center;
     padding: 1em;
     background-color: var(--primary-color);
@@ -28,6 +28,11 @@ header {
 
 header img {
     height: 80px;
+    grid-column: 1;
+}
+
+nav {
+    grid-column: 2;
 }
 
 nav a {
@@ -133,8 +138,31 @@ footer p {
     text-decoration: none;
 }
 
+footer nav.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main Section */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero article {
+        max-width: 100%;
+        padding: 0.5em;
+    }
+
+    section {
+        flex-direction: column; /* Stack adventure images vertically on small screens */
+        gap: 15px;
+    }
 }
