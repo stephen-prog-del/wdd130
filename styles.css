@@ -39,7 +39,7 @@ h1 {
 /* Main and aside styles for grid */
 main {
   grid-column: 2 / 3;
-  margin: 1rem;
+  margin: 1rem;  /* Ensures spacing around the main content */
 }
 
 aside {
@@ -76,4 +76,20 @@ main img {
 /* Reset paragraph padding */
 p {
   padding: 0;
+}
+
+/* Add mobile responsiveness for grid */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack grid items on smaller screens */
+  }
+
+  aside {
+    width: auto; /* Allow aside to be responsive */
+    margin: 0 auto; /* Center it on smaller screens */
+  }
+
+  main {
+    grid-column: 1 / 2; /* Make main content take full width */
+  }
 }
