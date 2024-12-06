@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Quiz</h1>
+    </header>
+    
+    <main>
+        <form id="quiz-form">
+            <!-- Question 1: Fill in the blank -->
+            <div class="form-item">
+                <label for="q1">What does CSS stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <!-- Question 2: Short answer -->
+            <div class="form-item">
+                <label for="q2">What is the purpose of the <code>alt</code> attribute in an <code>img</code> tag?</label>
+                <textarea id="q2" name="q2" required></textarea>
+            </div>
+
+            <!-- Question 3: Dropdown list -->
+            <div class="form-item">
+                <label for="q3">Which tag is used for a hyperlink?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="a">Anchor (<code>a</code>)</option>
+                    <option value="p">Paragraph (<code>p</code>)</option>
+                    <option value="div">Division (<code>div</code>)</option>
+                </select>
+            </div>
+
+            <!-- Question 4: Number input -->
+            <div class="form-item">
+                <label for="q4">How many standard HTML5 input types are there?</label>
+                <input type="number" id="q4" name="q4" min="1" max="20" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Quiz Form &copy; 2024</p>
+    </footer>
+</body>
+</html>

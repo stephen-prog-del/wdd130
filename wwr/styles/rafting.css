@@ -19,7 +19,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo on the left, navigation on the right */
+    grid-template-columns: 1fr 2fr; /* Adjust the column ratio for better spacing */
     align-items: center;
     padding: 1em;
     background-color: var(--primary-color);
@@ -32,11 +32,12 @@ header img {
 }
 
 nav {
-    grid-column: 2;
+    display: flex;
+    justify-content: flex-end; /* Align the links to the right */
+    gap: 1em; /* Ensures consistent spacing between links */
 }
 
 nav a {
-    margin: 0 1em;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -136,11 +137,17 @@ footer p {
 .sociallinks a {
     margin: 0 0.5em;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.sociallinks a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 footer nav.sociallinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 1em;
 }
 
 /* Main Section */
@@ -153,16 +160,30 @@ main {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust size for mobile */
     }
 
     .hero article {
-        max-width: 100%;
+        max-width: 90%; /* Allow article to take more width */
         padding: 0.5em;
     }
 
     section {
-        flex-direction: column; /* Stack adventure images vertically on small screens */
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem; /* Adjust size for very small devices */
+    }
+
+    .hero article {
+        font-size: 0.9rem;
     }
 }
