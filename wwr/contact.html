@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <header role="banner">
+    <header>
         <img src="images/logo9_200.png" alt="Rafting Travel Logo">
-        <nav role="navigation">
+        <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -25,7 +25,7 @@
         </nav>
     </header>
 
-    <main role="main">
+    <main>
         <h1>Contact Us</h1>
 
         <!-- Rafting Travel Section -->
@@ -44,10 +44,13 @@
         <!-- Find Us Section with Embedded Map -->
         <section>
             <h3>Find Us</h3>
-            <iframe class="map" src="https://www.google.com/maps/embed?...allowfullscreen loading="lazy referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </section>        
-
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
 
         <!-- Meet Our Team Section -->
         <section>
@@ -76,7 +79,7 @@
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="inquiry">Purpose of Your Message:</label>
+                <label>Purpose of Your Message:</label>
                 <div>
                     <input type="radio" id="general" name="inquiry" value="general">
                     <label for="general">General Inquiry</label>
@@ -103,9 +106,9 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <p>© 2024 Rafting Travel (RT) | Designed by Amuzu Stephen Kafui</p>
-        <nav class="sociallinks" role="navigation">
+        <nav class="sociallinks">
             <a href="https://facebook.com" title="Facebook">
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
