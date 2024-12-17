@@ -263,6 +263,7 @@ form button:hover {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Hero Section */
     .hero h1 {
         font-size: 2rem; /* Adjust size for mobile */
     }
@@ -286,14 +287,36 @@ form button:hover {
         max-width: 90%;
         padding: 1em;
     }
+
+    /* Map responsiveness */
+    .map {
+        height: 350px;
+    }
 }
 
 @media (max-width: 480px) {
+    /* Hero Section */
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller text for mobile */
     }
 
     .hero article {
         font-size: 0.9rem;
+    }
+
+    /* Form responsiveness */
+    form {
+        max-width: 95%;
+        padding: 1em;
+    }
+
+    /* Adventure Section */
+    figure {
+        width: 100%; /* Ensure images are full width on smaller screens */
+    }
+
+    /* Map responsiveness */
+    .map {
+        height: 300px;
     }
 }
