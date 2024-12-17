@@ -116,6 +116,18 @@ figcaption {
     text-transform: uppercase;
 }
 
+/* Add Map Styling */
+.map {
+    width: 100%;
+    max-width: 600px; /* Ensures the map doesn't get too large */
+    height: 450px; /* Fixed height for consistency */
+    border: 0; /* Removes the default border */
+    border-radius: 8px; /* Adds rounded corners */
+    display: block; /* Ensures proper spacing */
+    margin: 20px auto; /* Centers the map horizontally with some spacing */
+}
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -174,7 +186,7 @@ section p {
     font-size: 16px;
 }
 
-section iframe {
+section iframe.map {
     display: block;
     margin: 20px auto;
     border-radius: 8px;
@@ -247,39 +259,6 @@ form button {
 
 form button:hover {
     background-color: var(--accent1-color);
-}
-
-/* Social media links */
-.sociallinks a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.sociallinks img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.sociallinks img:hover {
-    transform: scale(1.2);
-}
-
-/* Footer styling */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-footer .sociallinks {
-    margin-top: 10px;
 }
 
 /* Mobile responsiveness */
