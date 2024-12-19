@@ -111,212 +111,64 @@ figure img {
 figcaption {
     margin-top: 10px;
     font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: var(--accent1-color);
 }
 
-/* Add Map Styling */
-.map {
-    width: 100%;
-    max-width: 600px; /* Ensures the map doesn't get too large */
-    height: 450px; /* Fixed height for consistency */
-    border: 0; /* Removes the default border */
-    border-radius: 8px; /* Adds rounded corners */
-    display: block; /* Ensures proper spacing */
-    margin: 20px auto; /* Centers the map horizontally with some spacing */
-}
-
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: var(--primary-color);
-    color: white;
-    margin-top: 1em;
-}
-
-footer p {
-    margin: 0;
-}
-
-.sociallinks img {
-    width: 30px;
-    height: 30px;
-}
-
-.sociallinks a {
-    margin: 0 0.5em;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.sociallinks a:hover img {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
-}
-
-footer nav.sociallinks {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-/* Main Section */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-}
-
-/* Styling for the Contact Us page */
-h1, h2, h3 {
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Section styling */
-section {
-    margin-bottom: 40px;
-}
-
-section p {
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-section iframe.map {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-/* Meet Our Team Section */
-figure {
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-}
-
-figure img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid var(--primary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
-}
-
-/* Form styling */
+/* Form Section */
 form {
-    background-color: var(--secondary-color);
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
 }
 
 form label {
     font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
+    margin-bottom: 0.5em;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea,
-form input[type="radio"],
-form input[type="checkbox"] {
+form input, form textarea {
+    padding: 0.8em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-}
-
-form textarea {
-    height: 150px;
-    resize: vertical;
 }
 
 form button {
     background-color: var(--primary-color);
     color: white;
-    padding: 10px 20px;
+    padding: 1em;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    /* Hero Section */
-    .hero h1 {
-        font-size: 2rem; /* Adjust size for mobile */
-    }
-
-    .hero article {
-        max-width: 90%;
-        padding: 0.5em;
-    }
-
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    figure {
-        width: 80%;
-    }
-
-    /* Form responsiveness */
-    form {
-        max-width: 90%;
-        padding: 1em;
-    }
-
-    /* Map responsiveness */
-    .map {
-        height: 350px;
-    }
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
 
-@media (max-width: 480px) {
-    /* Hero Section */
-    .hero h1 {
-        font-size: 1.5rem; /* Smaller text for mobile */
-    }
+footer .sociallinks a {
+    margin: 0 10px;
+    display: inline-block;
+}
 
-    .hero article {
-        font-size: 0.9rem;
-    }
-
-    /* Form responsiveness */
-    form {
-        max-width: 95%;
-        padding: 1em;
-    }
-
-    /* Adventure Section */
-    figure {
-        width: 100%; /* Ensure images are full width on smaller screens */
-    }
-
-    /* Map responsiveness */
-    .map {
-        height: 300px;
-    }
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
 }
