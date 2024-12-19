@@ -86,8 +86,8 @@ nav a {
     border-radius: 50%;
 }
 
-/* Adventure Images Section */
-section {
+/* Main Section Styling */
+.main-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -95,23 +95,57 @@ section {
     padding: 20px;
 }
 
-figure {
-    text-align: center;
-    margin: 0;
-    width: 350px;
+/* Company Information */
+.company-info {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-figure img {
+.company-info h2, .map h2, .team h2, .contact-form h2 {
+    font-family: 'Roboto Slab', serif;
+    color: var(--primary-color);
+}
+
+/* Google Map Section */
+.map {
     width: 100%;
-    height: auto;
-    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.map iframe {
+    border: 1px solid #ccc;
     border-radius: 8px;
 }
 
-figcaption {
+/* Employee Profile Section */
+.team {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.team figure {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.team figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.team figcaption {
     margin-top: 10px;
-    font-size: 1.5rem;
-    color: var(--accent1-color);
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 /* Form Section */
@@ -171,4 +205,11 @@ footer .sociallinks a {
 footer .sociallinks img {
     width: 30px;
     height: 30px;
+}
+
+/* Link to the Wireframe Image */
+footer p a {
+    color: var(--accent1-color);
+    text-decoration: underline;
+    font-weight: bold;
 }
